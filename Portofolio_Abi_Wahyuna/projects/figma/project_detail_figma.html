@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZipPoint Star — Abi Wahyuna</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project_detail_figma.css">
+</head>
+<body>
+
+    <div class="grain-overlay"></div>
+
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollBar"></div>
+    </div>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <nav id="navbar">
+        <div class="logo">ABI</div>
+        <a href="../../index.html" class="back-btn">← Back to Portfolio</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="project-hero">
+        <div class="project-hero-content">
+            <div class="project-tag">Unity 2D Game</div>
+            <h1 class="project-title">ZipPoint Star</h1>
+            <p class="project-subtitle">Puzzle game with unique mechanics</p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span class="meta-label">Role</span>
+                    <span class="meta-value">Game Developer</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Year</span>
+                    <span class="meta-value">2024</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Engine</span>
+                    <span class="meta-value">Unity</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Language</span>
+                    <span class="meta-value">C#</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase -->
+    <section class="project-showcase">
+        <img src="../../images/project_2.jpg" alt="ZipPoint Star" class="showcase-img">
+    </section>
+
+    <!-- Details -->
+    <section class="project-details">
+        <div class="details-container">
+
+            <div class="detail-section">
+                <h2>Overview</h2>
+                <p>ZipPoint Star is an engaging 2D puzzle game that challenges players with unique mechanics and creative level design. The game features innovative gameplay elements that keep players entertained while testing their problem-solving skills.</p>
+            </div>
+
+            <div class="detail-section">
+                <h2>The Challenge</h2>
+                <p>Creating a puzzle game that is both accessible to newcomers and challenging for experienced players. The main challenge was designing mechanics that feel fresh and intuitive while maintaining engaging gameplay throughout all levels.</p>
+            </div>
+
+            <div class="detail-section">
+                <h2>The Solution</h2>
+                <p>Developed a unique star-collection mechanic combined with zip-line movement system. This allows for creative level design and varied puzzle solutions, keeping the gameplay fresh and exciting.</p>
+            </div>
+
+            <div class="detail-section">
+                <h2>Key Features</h2>
+                <ul class="features-list">
+                    <li>Unique zip-line movement mechanic</li>
+                    <li>50+ challenging levels</li>
+                    <li>Progressive difficulty curve</li>
+                    <li>Colorful and engaging visuals</li>
+                    <li>Smooth controls and responsive gameplay</li>
+                </ul>
+            </div>
+
+            <div class="detail-section">
+                <h2>Gallery</h2>
+                <div class="gallery-grid">
+                    <img src="../../images/project_2.jpg" alt="Screenshot 1">
+                    <img src="../../images/project_2.jpg" alt="Screenshot 2">
+                    <img src="../../images/project_2.jpg" alt="Screenshot 3">
+                    <img src="../../images/project_2.jpg" alt="Screenshot 4">
+                    <img src="../../images/project_2.jpg" alt="Screenshot 4">
+                </div>
+            </div>
+
+            <div class="detail-section">
+                <h2>Technologies Used</h2>
+                <div class="tech-tags">
+                    <span class="tech-tag">Unity 2D</span>
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">Visual Studio</span>
+                    <span class="tech-tag">Git</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Next Project -->
+    <section class="next-project">
+        <div class="sep-line"></div>
+        <div class="next-project-content">
+            <span class="next-label">Next Project</span>
+            <h2>Wanderly</h2>
+            <a href="../../projects/figma/project_detail_figma.html" class="next-btn">View Project →</a>
+        </div>
+    </section>
+
+    <script>
+        // Scroll progress
+        window.addEventListener('scroll', () => {
+            const h = document.documentElement.scrollHeight - window.innerHeight;
+            document.getElementById('scrollBar').style.transform = `scaleX(${window.scrollY / h})`;
+        });
+
+        // Navbar
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 80);
+        });
+
+        // Cursor
+        const cursor = document.getElementById('cursor');
+        const glow   = document.getElementById('cursorGlow');
+        let mx=0,my=0,cx=0,cy=0,gx=0,gy=0;
+
+        document.addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY; });
+
+        (function loop(){
+            cx += (mx-cx)*0.2;  cy += (my-cy)*0.2;
+            gx += (mx-gx)*0.08; gy += (my-gy)*0.08;
+            cursor.style.transform = `translate(${cx}px,${cy}px)`;
+            glow.style.transform   = `translate(${gx-18}px,${gy-18}px)`;
+            requestAnimationFrame(loop);
+        })();
+
+        document.querySelectorAll('a, .features-list li, .gallery-grid img, .tech-tag').forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+            el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+        });
+
+        // Scroll reveal
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach((e, i) => {
+                if (e.isIntersecting)
+                    setTimeout(() => e.target.classList.add('visible'), i * 80);
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.detail-section').forEach(el => obs.observe(el));
+    </script>
+</body>
+</html>

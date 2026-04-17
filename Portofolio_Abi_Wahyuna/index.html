@@ -159,24 +159,20 @@
             <div class="timeline-item">
                 <div class="timeline-content">
                     <div class="experience-image">
-                        <img src="images/experience1.jpg" alt="Antaryon.it Experience">
+                        <img src="images/project_1.jpg" alt="Antaryon.it Experience">
                     </div>
                     <div class="timeline-year">2026 - Present</div>
                     <h3 class="timeline-title">UI/UX Designer</h3>
                     <p class="timeline-company">Antaryon.it</p>
                     <p class="timeline-description">Designing intuitive and engaging user interfaces for various digital platforms, conducting user research and usability testing, and collaborating with development teams to implement consistent design systems.</p>
                 </div>
-                <div class="timeline-content">
-                    <!-- Empty for spacing -->
-                </div>
+                <div class="timeline-content"></div>
             </div>
             <div class="timeline-item">
-                <div class="timeline-content">
-                    <!-- Empty for spacing -->
-                </div>
+                <div class="timeline-content"></div>
                 <div class="timeline-content">
                     <div class="experience-image">
-                        <img src="images/experience2.jpg" alt="SLAB Studio Experience">
+                        <img src="images/project_2.jpg" alt="SLAB Studio Experience">
                     </div>
                     <div class="timeline-year">2025</div>
                     <h3 class="timeline-title">Internship</h3>
@@ -205,61 +201,78 @@
             <div class="section-number">// 03</div>
             <h2 class="section-title">SELECTED WORKS</h2>
         </div>
-        <div class="bento-grid">
-            <div class="bento-item item-1">
-                <img src="images/project_1.jpg" alt="3D Platformer Game" class="bento-bg">
+
+        <!-- Filter Buttons -->
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">ALL</button>
+            <button class="filter-btn" data-filter="uiux">UI/UX DESIGN</button>
+            <button class="filter-btn" data-filter="game">GAME DEV</button>
+            <button class="filter-btn" data-filter="web">WEBSITE</button>
+            <button class="filter-btn" data-filter="iot">IOT</button>
+        </div>
+
+        <div class="bento-grid" id="bentoGrid">
+            <div class="bento-item item-1" data-category="game" data-project="zippoint">
+                <img src="images/project_2.jpg" alt="ZipPoint Star" class="bento-bg">
+                <div class="bento-overlay"></div>
                 <div class="bento-content">
-                    <div class="bento-tag">UNITY GAME</div>
-                    <h3>3D Platformer Game</h3>
-                    <p>Engaging gameplay with stunning visuals</p>
+                    <div class="bento-tag">UNITY 2D GAME</div>
+                    <h3>ZipPoint Star</h3>
+                    <p>Puzzle game with unique mechanics</p>
                 </div>
             </div>
-            <div class="bento-item item-2">
-                <img src="images/project_2.jpg" alt="Mobile App Interface" class="bento-bg">
+            <div class="bento-item item-2" data-category="uiux" data-project="wanderly">
+                <img src="images/project_1.jpg" alt="Wanderly" class="bento-bg">
+                <div class="bento-overlay"></div>
                 <div class="bento-content">
                     <div class="bento-tag">UI/UX DESIGN</div>
-                    <h3>Mobile App Interface</h3>
-                    <p>Modern and intuitive design</p>
+                    <h3>Wanderly</h3>
+                    <p>UI/UX Travel Website</p>
                 </div>
             </div>
-            <div class="bento-item item-3">
-                <img src="images/project_3.jpg" alt="Portfolio Website" class="bento-bg">
+            <div class="bento-item item-3" data-category="game" data-project="magictype">
+                <img src="images/project_4.jpg" alt="MagicType" class="bento-bg">
+                <div class="bento-overlay"></div>
                 <div class="bento-content">
-                    <div class="bento-tag">WEB DESIGN</div>
-                    <h3>Portfolio Website</h3>
-                    <p>Creative showcase</p>
+                    <div class="bento-tag">UNITY 2D GAME</div>
+                    <h3>MagicType</h3>
+                    <p>Isometric game with magical typing</p>
                 </div>
             </div>
-            <div class="bento-item item-4">
-                <img src="images/project_4.jpg" alt="2D Puzzle Game" class="bento-bg">
+            <div class="bento-item item-4" data-category="uiux" data-project="seapedia">
+                <img src="images/project_7.jpg" alt="Sea Pedia" class="bento-bg">
+                <div class="bento-overlay"></div>
                 <div class="bento-content">
-                    <div class="bento-tag">GAME DEV</div>
-                    <h3>2D Puzzle</h3>
-                    <p>Brain teaser game</p>
+                    <div class="bento-tag">UI/UX DESIGN</div>
+                    <h3>Sea Pedia</h3>
+                    <p>Interactive educational about sea</p>
                 </div>
             </div>
-            <div class="bento-item item-5">
-                <img src="images/project_5.jpg" alt="Dashboard Interface" class="bento-bg">
+            <div class="bento-item item-5" data-category="game" data-project="magictype2">
+                <img src="images/project_5.jpg" alt="MagicType" class="bento-bg">
+                <div class="bento-overlay"></div>
                 <div class="bento-content">
-                    <div class="bento-tag">UI DESIGN</div>
-                    <h3>Dashboard Interface</h3>
-                    <p>Clean and functional analytics</p>
+                    <div class="bento-tag">UNITY 2D GAME</div>
+                    <h3>MagicType</h3>
+                    <p>Isometric game with magical typing elements</p>
                 </div>
             </div>
-            <div class="bento-item item-6">
-                <img src="images/project_6.jpg" alt="AR Experience" class="bento-bg">
+            <div class="bento-item item-6" data-category="game" data-project="dunianara">
+                <img src="images/project_6.jpg" alt="Dunia Nara" class="bento-bg">
+                <div class="bento-overlay"></div>
                 <div class="bento-content">
-                    <div class="bento-tag">UNITY PROJECT</div>
-                    <h3>AR Experience</h3>
-                    <p>Immersive augmented reality application</p>
+                    <div class="bento-tag">UNITY 2D PROJECT</div>
+                    <h3>Dunia Nara</h3>
+                    <p>2D platformer with unique mini puzzles</p>
                 </div>
             </div>
-            <div class="bento-item item-7">
-                <img src="images/project_7.jpg" alt="E-Learning Platform" class="bento-bg">
+            <div class="bento-item item-7" data-category="uiux" data-project="triploka">
+                <img src="images/project_3.jpg" alt="TripLoka" class="bento-bg">
+                <div class="bento-overlay"></div>
                 <div class="bento-content">
-                    <div class="bento-tag">WEB APP</div>
-                    <h3>E-Learning Platform</h3>
-                    <p>Interactive learning interface</p>
+                    <div class="bento-tag">UI/UX DESIGN</div>
+                    <h3>TripLoka</h3>
+                    <p>Travel Guide and booking interface</p>
                 </div>
             </div>
         </div>
@@ -403,6 +416,38 @@
             <div>&copy; 2026 All Rights Reserved</div>
         </div>
     </footer>
+
+    <!-- ===== PROJECT MODAL ===== -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose">
+                <span>✕</span>
+            </button>
+            <div class="modal-inner">
+                <!-- Left: Image -->
+                <div class="modal-left">
+                    <div class="modal-img-wrapper">
+                        <img src="" alt="" id="modalImg">
+                        <div class="modal-img-overlay"></div>
+                    </div>
+                    <div class="modal-screenshots" id="modalScreenshots"></div>
+                </div>
+                <!-- Right: Info -->
+                <div class="modal-right">
+                    <div class="modal-tag" id="modalTag"></div>
+                    <h2 class="modal-title" id="modalTitle"></h2>
+                    <p class="modal-desc" id="modalDesc"></p>
+
+                    <div class="modal-meta" id="modalMeta"></div>
+
+                    <div class="modal-tech" id="modalTech"></div>
+
+                    <div class="modal-actions" id="modalActions"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
