@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio — Ari Saputra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">ari<span>.</span>dev</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#whatido">Services</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Proyek</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+    <a href="#contact" class="btn-primary" style="font-size:.82rem;padding:.55rem 1.2rem;">Hire Me</a>
+  </nav>
+
+  <!-- HERO (unchanged) -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">
+        <span class="hero-dot"></span>
+        Available for work
+      </div>
+      <h1>Halo, saya<br><em>Abi Wahyuna</em></h1>
+      <p class="hero-sub">
+        Full-stack developer &amp; UI/UX designer berbasis Bali —
+        membangun produk digital yang fungsional sekaligus terasa mulus.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">Lihat Proyek &nbsp;→</a>
+        <a href="#contact" class="btn-outline">Hubungi Saya</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <span class="stat-num">32+</span>
+          <span class="stat-label">Proyek Selesai</span>
+        </div>
+        <div>
+          <span class="stat-num">4</span>
+          <span class="stat-label">Tahun Pengalaman</span>
+        </div>
+        <div>
+          <span class="stat-num">18</span>
+          <span class="stat-label">Klien Puas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT (unchanged) -->
+  <section class="section" id="about">
+    <div class="about-grid">
+      <div class="about-photo">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop" alt="Foto Ari Saputra" />
+        <div class="about-badge">
+          <div class="about-badge-num">4+</div>
+          <div class="about-badge-text">Tahun<br>Pengalaman</div>
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="section-tag">Tentang Saya</div>
+        <h2>Developer yang<br>berpikir desain</h2>
+        <p>Saya Ari, pengembang berbasis di Bali. Saya percaya bahwa kode terbaik adalah yang tak terlihat <br> pengguna hanya merasakan pengalamannya. Mulai dari wireframe UI, game 2D indie, hingga <br> platform e-commerce saya senang mengerjakan tantangan di berbagai ranah.</p>
+        
+        <div class="about-details">
+          <div class="detail-row">
+            <span class="detail-label">Lokasi</span>
+            <span class="detail-val">Denpasar, Bali</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Ketersediaan</span>
+            <span class="detail-val" style="color:var(--accent3)">Open for work</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Fokus</span>
+            <span class="detail-val">Full-stack + IoT</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-label">Bahasa</span>
+            <span class="detail-val">ID, EN</span>
+          </div>
+        </div>
+        <a href="#" class="btn-primary" style="margin-top:.5rem;">Download CV &nbsp;↓</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       WHAT I DO (NEW)
+  ══════════════════════════════ -->
+  <section class="section" id="whatido">
+    <div class="whatido-top">
+      <div>
+        <div class="section-tag">Layanan</div>
+        <h2>What I Do</h2>
+      </div>
+      <p>Bidang yang saya tekuni secara profesional — dari piksel ke produk.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="svc-card" style="--glow:rgba(232,255,71,.1);--tag-hover:rgba(232,255,71,.2);--tag-color:var(--accent);--tag-bg:rgba(232,255,71,.05)">
+        <div class="svc-index">01 — Design</div>
+        <div class="svc-icon">✦</div>
+        <h3>UI/UX Design</h3>
+        <p>Merancang antarmuka yang intuitif dan engaging — dari wireframe, riset pengguna, hingga high-fidelity prototype siap dev-handoff. Setiap keputusan desain didukung data nyata dari pengguna.</p>
+        <div class="svc-tags">
+          <span class="svc-tag">Figma</span>
+          <span class="svc-tag">Prototyping</span>
+          <span class="svc-tag">Design System</span>
+        </div>
+      </div>
+
+      <div class="svc-card" style="--glow:rgba(61,255,176,.08);--tag-hover:rgba(61,255,176,.2);--tag-color:var(--accent3);--tag-bg:rgba(61,255,176,.05)">
+        <div class="svc-index">02 — Development</div>
+        <div class="svc-icon">◈</div>
+        <h3>Web Dev</h3>
+        <p>Membangun website dan aplikasi web yang cepat, responsif, dan clean. Menggunakan HTML & CSS yang semantik, Laravel untuk backend solid, serta React untuk antarmuka yang dinamis.</p>
+        <div class="svc-tags">
+          <span class="svc-tag">HTML</span>
+          <span class="svc-tag">CSS</span>
+          <span class="svc-tag">Laravel</span>
+          <span class="svc-tag">Bootstrap</span>
+        </div>
+      </div>
+
+      <div class="svc-card" style="--glow:rgba(255,92,53,.08);--tag-hover:rgba(255,92,53,.2);--tag-color:#ff7a60;--tag-bg:rgba(255,92,53,.05)">
+        <div class="svc-index">03 — Game Dev</div>
+        <div class="svc-icon">⬡</div>
+        <h3>Game Dev</h3>
+        <p>Mengembangkan game 2D indie dengan Unity & C# — dari gameplay mechanic, pixel art, sistem state machine musuh, hingga build siap rilis. Punya pengalaman di 5+ game jam internasional.</p>
+        <div class="svc-tags">
+          <span class="svc-tag">Unity</span>
+          <span class="svc-tag">C#</span>
+          <span class="svc-tag">Game Design</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       SKILLS (NEW STANDALONE)
+  ══════════════════════════════ -->
+  <section class="section" id="skills">
+    <div class="skills-wrap">
+      <div class="section-header">
+        <div class="section-tag">Keahlian</div>
+        <h2>Tech Stack</h2>
+        <p>Tools dan teknologi yang saya gunakan untuk membangun produk digital — dari desain hingga deploy.</p>
+      </div>
+
+      <div class="skill-categories">
+
+        <div class="skill-cat-row">
+          <div class="skill-cat-label">Design</div>
+          <div class="skill-pills-center">
+            <span class="s-pill featured">Figma</span>
+            <span class="s-pill">Prototyping</span>
+            <span class="s-pill">Design System</span>
+            <span class="s-pill">Usability Testing</span>
+          </div>
+        </div>
+
+        <div class="skill-cat-row">
+          <div class="skill-cat-label">Web Dev</div>
+          <div class="skill-pills-center">
+            <span class="s-pill feat2">HTML</span>
+            <span class="s-pill feat2">CSS</span>
+            <span class="s-pill feat2">Laravel</span>
+            <span class="s-pill">Bootstrap</span>
+            <span class="s-pill">Laragon</span>
+            <span class="s-pill">PhpMyAdmin</span>
+
+          </div>
+        </div>
+
+        <div class="skill-cat-row">
+          <div class="skill-cat-label">Game Dev</div>
+          <div class="skill-pills-center">
+            <span class="s-pill feat3">Unity</span>
+            <span class="s-pill feat3">C#</span>
+            <span class="s-pill">Game Design</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       EXPERIENCE (NEW STANDALONE)
+  ══════════════════════════════ -->
+  <section class="section" id="experience">
+    <div class="exp-layout">
+
+      <!-- sticky left -->
+      <div class="exp-sticky">
+        <div class="section-tag">Karir</div>
+        <h2>Pengalaman<br>Kerja</h2>
+        <p>Perjalanan profesional saya — dari internship hingga full-time di dunia desain dan teknologi.</p>
+
+        <div class="exp-stats">
+          <div class="exp-stat-box">
+            <div class="exp-stat-n">2</div>
+            <div class="exp-stat-l">Perusahaan<br>yang pernah dijalani</div>
+          </div>
+          <div class="exp-stat-box">
+            <div class="exp-stat-n">2+</div>
+            <div class="exp-stat-l">Tahun<br>pengalaman profesional</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- cards right -->
+      <div class="exp-cards">
+
+        <div class="exp-card" style="--card-bar:var(--accent)">
+          <div class="exp-card-top">
+            <div>
+              <div class="exp-card-period">2026 — Sekarang</div>
+              <div class="exp-card-role">UI/UX Designer</div>
+              <div class="exp-card-company">Antaryon.it</div>
+            </div>
+            <span class="exp-card-badge badge-full">Full-time</span>
+          </div>
+          <div class="exp-card-desc">
+            Designing intuitive and engaging user interfaces for various digital platforms, conducting user research and usability testing, and collaborating with development teams to implement consistent design systems.
+          </div>
+        </div>
+
+        <div class="exp-card" style="--card-bar:var(--accent3)">
+          <div class="exp-card-top">
+            <div>
+              <div class="exp-card-period">2025</div>
+              <div class="exp-card-role">Design & Web Dev Intern</div>
+              <div class="exp-card-company">SLAB Studio</div>
+            </div>
+            <span class="exp-card-badge badge-intern">Internship</span>
+          </div>
+          <div class="exp-card-desc">
+            Contributing to various design and web development projects, learning professional workflows in the creative industry, and honing technical and soft skills through real-world projects.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS (unchanged) -->
+  <section class="section" id="projects">
+    <div class="section-header">
+      <div class="section-tag">Portofolio</div>
+      <h2>Proyek Pilihan</h2>
+      <p>Klik kartu untuk melihat detail dan galeri foto.</p>
+    </div>
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" data-filter="all">Semua</button>
+      <button class="filter-btn" data-filter="uiux">UI/UX</button>
+      <button class="filter-btn" data-filter="game">Game Dev</button>
+      <button class="filter-btn" data-filter="web">Website</button>
+      <button class="filter-btn" data-filter="iot">IoT</button>
+    </div>
+    <div class="projects-grid" id="projectsGrid"></div>
+  </section>
+
+  <!-- CONTACT (unchanged) -->
+  <section class="section" id="contact">
+    <div class="section-header">
+      <div class="section-tag">Kontak</div>
+      <h2>Mari Berkolaborasi</h2>
+      <p>Punya proyek menarik? Saya terbuka untuk diskusi.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-form">
+        <div class="form-group">
+          <label class="form-label">Nama Lengkap</label>
+          <input type="text" class="form-input" placeholder="Budi Santoso" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-input" placeholder="budi@email.com" />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Pesan</label>
+          <textarea class="form-textarea" placeholder="Ceritakan proyek Anda..."></textarea>
+        </div>
+        <button class="btn-primary" style="align-self:flex-start">Kirim Pesan &nbsp;✉</button>
+      </div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-item-label">Lokasi</div>
+            <div class="contact-item-val">Denpasar, Bali, Indonesia</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-val">abi@example.com</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div>
+            <div class="contact-item-label">WhatsApp</div>
+            <div class="contact-item-val">+62 877 6180 0464</div>
+          </div>
+        </div>
+        <div class="social-row">
+          <button class="social-btn">GH</button>
+          <button class="social-btn">in</button>
+          <button class="social-btn">Dr</button>
+          <button class="social-btn">Ig</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Dibuat dengan ♥ oleh <strong>Abi Wahyunaa</strong> · 2025</p>
+  </footer>
+
+  <!-- MODAL (unchanged) -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <div class="modal-title" id="mTitle">–</div>
+          <div class="modal-subtitle" id="mSubtitle">–</div>
+        </div>
+        <button class="modal-close" id="modalClose">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="gallery-main" id="galleryMain">
+          <img id="galleryMainImg" src="" alt="Screenshot proyek" />
+          <button class="gallery-nav prev" id="galleryPrev">‹</button>
+          <button class="gallery-nav next" id="galleryNext">›</button>
+          <div class="gallery-counter" id="galleryCounter">1 / 1</div>
+        </div>
+        <div class="gallery-thumbs" id="galleryThumbs">
+          <label class="upload-zone" title="Tambah foto" id="uploadZone">
+            +
+            <input type="file" id="file-upload" accept="image/*" multiple />
+          </label>
+        </div>
+        <p class="modal-desc" id="mDesc">–</p>
+        <div class="modal-meta">
+          <div class="meta-item"><div class="meta-label">Tools</div><div class="meta-value" id="mTools">–</div></div>
+          <div class="meta-item"><div class="meta-label">Tahun</div><div class="meta-value" id="mYear">–</div></div>
+          <div class="meta-item"><div class="meta-label">Role</div><div class="meta-value" id="mRole">–</div></div>
+        </div>
+        <div class="modal-actions">
+          <a id="mDemo" href="#" class="btn-primary" target="_blank">Live Demo ↗</a>
+          <a id="mCode" href="#" class="btn-outline" target="_blank">Source Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
