@@ -31,9 +31,9 @@ const projects = [
         cat:'uiux',tags:['Figma','User Research','Design System'],
         tools:'Figma',year:'2024',role:'UI/UX Designer',demo:'https://www.figma.com/design/6Oft40U2YNqF7cjk24tNl3/Abi_Wahyuna_Project?node-id=413-2&t=ofRZOr8kpuEVpR81-1',
         images:[
-          'img/wanderly_1.png',
-          'img/wanderly_2.png',
-          'img/wanderly_3.png'
+          'img/Wanderly_1.png',
+          'img/Wanderly_2.png',
+          'img/Wanderly_3.png'
         ]
       },
 
