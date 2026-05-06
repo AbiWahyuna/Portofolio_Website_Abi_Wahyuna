@@ -1,70 +1,113 @@
 const projects = [
       {
-        id:'p1',title:'FinTrack — Manajemen Keuangan',subtitle:'UI/UX Design · Mobile App',
-        desc:'Desain antarmuka aplikasi manajemen keuangan personal dengan fitur pelacakan pengeluaran, anggaran bulanan, dan laporan visual. Riset pengguna dilakukan melalui 12 sesi wawancara mendalam untuk memastikan UX yang intuitif.',
+        id:'p1',title:'SeaPedia',subtitle:'UI/UX Design · Mobile App',
+        desc:'Proyek desain UI/UX bertema edukasi maritim yang berfokus pada ubur-ubur kristal (Crystal Jellyfish). Tujuan utama proyek ini adalah menguji penerapan interaksi parallax pada perangkat mobile untuk meningkatkan keterlibatan pengguna (user engagement). Menggunakan skema warna monokromatik biru tua untuk menjaga fokus pada visual konten yang kontras dan tajam.',
         cat:'uiux',tags:['Figma','Prototyping','User Research','Design System'],
-        tools:'Figma, Maze, Miro',year:'2024',role:'UI/UX Designer',demo:'#',code:'#',
+        tools:'Figma',year:'2024',role:'UI/UX Designer',demo:'https://www.figma.com/design/6Oft40U2YNqF7cjk24tNl3/Abi_Wahyuna_Project?node-id=413-2&t=ofRZOr8kpuEVpR81-1',
         images:[
-          'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1604594849809-dfedbc827105?w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&auto=format&fit=crop',
+          'img/JellyFish_0.png',
+          'img/JellyFish_1.png',
+          'img/JellyFish_2.png',
+          'img/JellyFish_3.png',
+          'img/JellyFish_4.png',
         ]
       },
+
       {
-        id:'p2',title:'PixelRealm — Platformer 2D',subtitle:'Game Dev · Unity',
-        desc:'Game platformer indie bertema retro pixel-art dengan 8 level unik, sistem musuh berbasis state machine, dan boss fight yang menantang. Dirilis di itch.io dengan 1.200+ unduhan.',
-        cat:'game',tags:['Unity','C#','Aseprite','FMOD'],
-        tools:'Unity 2023, C#, Aseprite',year:'2024',role:'Game Developer / Artist',demo:'#',code:'#',
+        id:'p2',title:'MagicType',subtitle:'Game Dev · Unity',
+        desc:'MagicType adalah game berbasis wave-survival yang menantang kecepatan dan akurasi mengetik pemain. Dibangun menggunakan Unity dan C#, game ini mengubah mekanisme serangan tradisional menjadi sistem spell-casting melalui keyboard. Proyek ini mendemonstrasikan integrasi sistem input string real-time ke dalam logika pertempuran RPG.',
+        cat:'game',tags:['Unity','C#'],
+        tools:'Unity 2022, C#',year:'2025',role:'Game Developer / Artist',demo:'https://abiwahyuna.itch.io/magictype',
         images:[
-          'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=800&auto=format&fit=crop',
+          'img/MagicType_2.png',
+          'img/MagicType_3.png',
+          'img/MagicType_1.png'
         ]
       },
+
       {
-        id:'p3',title:'BaliCraft — E-Commerce Kerajinan',subtitle:'Website · Full-stack',
-        desc:'Platform e-commerce khusus kerajinan tangan pengrajin Bali. Fitur: galeri produk interaktif, keranjang real-time, integrasi Midtrans, dan dashboard admin untuk manajemen stok.',
-        cat:'web',tags:['Next.js','Tailwind','Supabase','Midtrans'],
-        tools:'Next.js, TypeScript, Supabase, Midtrans',year:'2023',role:'Full-stack Developer',demo:'#',code:'#',
+        id:'p3',title:'Wanderly',subtitle:'UI/UX Design · Website',
+        desc:'Proyek UI/UX ini mengusung tema eksplorasi global dengan estetika yang modern dan cerah. Penggunaan high-quality imagery dikombinasikan dengan tipografi yang tegas bertujuan untuk membangun kepercayaan dan rasa antusias bagi para traveler. Elemen-elemen seperti kartu destinasi yang interaktif, galeri perjalanan, dan bagian testimoni disusun secara strategis untuk mengoptimalkan konversi dan kenyamanan navigasi pengguna.',
+        cat:'uiux',tags:['Figma','User Research','Design System'],
+        tools:'Figma',year:'2024',role:'UI/UX Designer',demo:'https://www.figma.com/design/6Oft40U2YNqF7cjk24tNl3/Abi_Wahyuna_Project?node-id=413-2&t=ofRZOr8kpuEVpR81-1',
         images:[
-          'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=800&auto=format&fit=crop',
+          'img/wanderly_1.png',
+          'img/wanderly_2.png',
+          'img/wanderly_3.png'
         ]
       },
+
+
       {
-        id:'p4',title:'SmartFarm — Monitoring Tanaman',subtitle:'IoT · Raspberry Pi',
-        desc:'Sistem monitoring kebun otomatis menggunakan sensor suhu, kelembaban tanah, dan cahaya terkoneksi ke dashboard web real-time. Data dikirim via MQTT, divisualisasikan di Grafana, notifikasi ke WhatsApp.',
-        cat:'iot',tags:['Arduino','Raspberry Pi','MQTT','Python','Node-RED'],
-        tools:'Arduino, Python, MQTT, Grafana',year:'2024',role:'IoT Engineer',demo:'#',code:'#',
+        id:'p4',title:'TripLoka',subtitle:'UI/UX Design · Website',
+        desc:'Proyek UI/UX ini adalah platform tour guide khusus Bali yang bertujuan menghubungkan pelancong dengan pemandu lokal asli Bali yang mengenal setiap sudut pulau secara mendalam. Berbeda dengan agen tur massal, desain ini berfokus pada pengalaman yang lebih personal dan bermakna—mulai dari mendaki gunung hingga menjelajahi tradisi lokal. Antarmukanya dirancang untuk mencerminkan keindahan alam Bali, memastikan setiap petualangan terasa lebih aman, nyaman, dan penuh cerita budaya.',
+        cat:'uiux',tags:['Figma','Prototyping','User Research','Design System'],
+        tools:'Figma',year:'2024',role:'UI/UX Designer',demo:'https://www.figma.com/design/6Oft40U2YNqF7cjk24tNl3/Abi_Wahyuna_Project?node-id=413-2&t=ofRZOr8kpuEVpR81-1',
         images:[
-          'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1586771107445-d3ca888129ff?w=800&auto=format&fit=crop',
+          'img/TripLoka_1.png',
+          'img/TripLoka_2.png',
+          'img/TripLoka_3.png',
+          'img/TripLoka_4.png',
+          'img/TripLoka_5.png',
+          'img/TripLoka_6.png',
         ]
       },
+
+
       {
-        id:'p5',title:'Wanderlust — Travel App',subtitle:'UI/UX Design · Mobile',
-        desc:'Aplikasi perjalanan dengan fitur itinerary pintar, rekomendasi tempat berbasis preferensi, dan peta offline. High-fidelity prototype dengan 40+ screen yang telah diuji ke 20 pengguna nyata.',
-        cat:'uiux',tags:['Figma','Auto Layout','Prototyping','Usability Testing'],
-        tools:'Figma, FigJam, Notion',year:'2023',role:'UI/UX Designer',demo:'#',code:'#',
+        id:'p5',title:'SmartPark',subtitle:'Website · Laravel',
+        desc:'QuickPark adalah solusi SaaS (Software as a Service) yang dirancang untuk mendigitalisasi pengelolaan parkir dari skala kecil hingga besar. Sistem ini membagi alur kerja ke dalam tiga peran strategis: Admin untuk manajemen area, Petugas untuk pencatatan transaksi real-time dan struk, serta Owner untuk pemantauan pendapatan dan statistik data. Proyek ini berfokus pada efisiensi pencatatan kendaraan dan transparansi data keuangan untuk mencegah kebocoran pendapatan di lapangan.',
+        cat:'web',tags:['Laravel','PHP','PHPMyAdmin','CSS'],
+        tools:'Laravel, PHP, PHPMyAdmin, CSS',year:'2026',role:'Backend Developer',demo:'#',
         images:[
-          'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1503220317375-aaad61436b1b?w=800&auto=format&fit=crop',
+          'img/QuickPark_1.png',
+          'img/QuickPark_2.png',
+          'img/QuickPark_3.png',
+          'img/QuickPark_4.png',
         ]
       },
+
       {
-        id:'p6',title:'SmartDoor — Akses Pintu IoT',subtitle:'IoT · RFID + Web Dashboard',
-        desc:'Sistem akses pintu otomatis berbasis RFID dan fingerprint terintegrasi dengan web dashboard untuk manajemen pengguna. Log akses disimpan di cloud dan dipantau real-time dari smartphone.',
-        cat:'iot',tags:['ESP32','RFID','Firebase','React','Node.js'],
-        tools:'ESP32, Arduino IDE, Firebase, React',year:'2023',role:'IoT + Full-stack Developer',demo:'#',code:'#',
+        id:'p6',title:'ArtTech',subtitle:'UI/UX Design · Website',
+        desc:'ArtTech adalah solusi UI/UX untuk kebutuhan pameran seni digital yang menggabungkan teknologi dan estetika. Platform ini menyediakan ruang bagi seniman untuk memamerkan karya mereka dengan tampilan yang eksklusif dan profesional. Berfokus pada kemudahan navigasi dan penyajian visual yang tajam, ArtTech mendefinisikan ulang cara kita menikmati seni di era digital.',
+        cat:'uiux',tags:['Figma','Prototyping','Design System'],
+        tools:'Figma',year:'2024',role:'UI/UX Designer',demo:'https://www.figma.com/design/6Oft40U2YNqF7cjk24tNl3/Abi_Wahyuna_Project?node-id=413-2&t=ofRZOr8kpuEVpR81-1',
         images:[
-          'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&auto=format&fit=crop',
-          'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=800&auto=format&fit=crop',
+          'img/ArtTech_1.png',
+          'img/ArtTech_2.png',
+          'img/ArtTech_3.png',
+          'img/ArtTech_4.png',
+        ]
+      },
+
+      {
+        id:'p7',title:'Dunia Nara',subtitle:'Game Dev · Unity',
+        desc:'Di tengah hiruk pikuk kehidupan, Dunia Nara hadir sebagai tempat pemberhentian sejenak. Dalam game platformer 2D ini, pemain akan menavigasi dunia yang indah sambil memecahkan teka-teki yang merefleksikan perjalanan mencari jati diri. Sebuah perpaduan seni ilustrasi dan pemrograman Unity yang bertujuan menyentuh hati pemain melalui setiap langkah kecil Nara.',
+        cat:'game',tags:['Unity','C#'],
+        tools:'Unity 2022, C#',year:'2025',role:'Game Developer',demo:'',
+        images:[
+          'img/DuniaNara_2.png',
+          'img/DuniaNara_1.png',
+          'img/DuniaNara_3.png',
+          'img/DuniaNara_4.png',
+        ]
+      },
+      
+      {
+        id:'p8',title:'ZipPoint Star',subtitle:'Game Dev · Unity',
+        desc:'ZipPoint Star adalah game mobile kasual yang menguji ketelitian dan imajinasi pemain. Mekanik utamanya mengharuskan pemain menghubungkan titik-titik sesuai urutan angka untuk membentuk siluet misterius. Setelah bentuk terungkap, tantangan berikutnya adalah menebak objek tersebut menggunakan sistem susun kata yang tersedia. Proyek ini menggabungkan kepuasan visual saat menggambar garis dengan stimulasi kognitif melalui teka-teki kata.',
+        cat:'game',tags:['Unity','C#'],
+        tools:'Unity 2022, C#',year:'2025',role:'Game Developer',demo:'#',
+        images:[
+          'img/ZipPoint_1.png',
+          'img/ZipPoint_2.png',
+          'img/ZipPoint_3.png'
         ]
       },
     ];
 
-    const catLabel = {uiux:'UI/UX',game:'Game Dev',web:'Website',iot:'IoT'};
-    const catClass  = {uiux:'cat-uiux',game:'cat-game',web:'cat-web',iot:'cat-iot'};
+    const catLabel = {uiux:'UI/UX',game:'Game Dev',web:'Website'};
+    const catClass  = {uiux:'cat-uiux',game:'cat-game',web:'cat-web'};
 
     function renderCards(filter){
       const grid = document.getElementById('projectsGrid');
@@ -111,7 +154,6 @@ const projects = [
       document.getElementById('mYear').textContent=p.year;
       document.getElementById('mRole').textContent=p.role;
       document.getElementById('mDemo').href=p.demo;
-      document.getElementById('mCode').href=p.code;
       currentImages=[...p.images]; currentImg=0;
       renderGallery();
       document.getElementById('modalOverlay').classList.add('open');
@@ -138,7 +180,8 @@ const projects = [
         thumb.className=`gallery-thumb${i===currentImg?' active':''}`;
         thumb.innerHTML=`<img src="${src}" alt="Thumbnail ${i+1}" loading="lazy" />`;
         thumb.addEventListener('click',()=>{currentImg=i;renderGallery();});
-        strip.insertBefore(thumb,document.getElementById('uploadZone'));
+        strip.appendChild(thumb);
+
       });
     }
     document.getElementById('galleryPrev').addEventListener('click',()=>{
@@ -152,12 +195,4 @@ const projects = [
       if(e.key==='ArrowLeft'){currentImg=(currentImg-1+currentImages.length)%currentImages.length;renderGallery();}
       if(e.key==='ArrowRight'){currentImg=(currentImg+1)%currentImages.length;renderGallery();}
       if(e.key==='Escape')closeModal();
-    });
-    document.getElementById('file-upload').addEventListener('change',function(){
-      Array.from(this.files).forEach(file=>{
-        const r=new FileReader();
-        r.onload=e=>{currentImages.push(e.target.result);currentImg=currentImages.length-1;renderGallery();};
-        r.readAsDataURL(file);
-      });
-      this.value='';
     });
