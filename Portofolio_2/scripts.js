@@ -196,3 +196,48 @@ const projects = [
       if(e.key==='ArrowRight'){currentImg=(currentImg+1)%currentImages.length;renderGallery();}
       if(e.key==='Escape')closeModal();
     });
+
+    //kirim pesan ke email
+    // INIT EMAILJS
+    (function(){
+      emailjs.init("KhXYVeff4fU-MxK3u");
+    })();
+
+    // KIRIM FORM
+    document.getElementById('sendBtn').addEventListener('click', function(e) {
+      e.preventDefault();
+
+      const nama = document.querySelector('.form-input[type="text"]').value;
+      const email = document.querySelector('.form-input[type="email"]').value;
+      const pesan = document.querySelector('.form-textarea').value;
+
+      if (!nama || !email || !pesan) {
+        alert('Isi dulu semua field bro 😄');
+        return;
+      }
+
+      const templateParams = {
+        nama: nama,
+        email: email,
+        pesan: pesan,
+        time: new Date().toLocaleString()
+      };
+
+      emailjs.send(
+        "service_rfdceol",
+        "template_jin37le",
+        templateParams
+      )
+      .then(function(response) {
+        alert('Pesan terkirim! 🚀');
+
+        // reset form
+        document.querySelector('.form-input[type="text"]').value = '';
+        document.querySelector('.form-input[type="email"]').value = '';
+        document.querySelector('.form-textarea').value = '';
+
+      }, function(error) {
+        alert('Gagal kirim 😢');
+        console.log(error);
+      });
+    }); 

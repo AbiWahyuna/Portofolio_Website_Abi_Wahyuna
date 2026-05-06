@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 <body>
 
@@ -321,7 +322,9 @@
           <label class="form-label">Pesan</label>
           <textarea class="form-textarea" placeholder="pesan untuk Abi..."></textarea>
         </div>
-        <button class="btn-primary" style="align-self:flex-start">Kirim Pesan &nbsp;✉</button>
+        <button id="sendBtn" class="btn-primary" style="align-self:flex-start">
+        Kirim Pesan &nbsp;✉
+      </button>
       </div>
       <div class="contact-info">
         <div class="contact-item">
