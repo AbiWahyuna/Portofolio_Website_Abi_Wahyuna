@@ -853,7 +853,7 @@
 
     /* RESPONSIVE */
     @media(max-width:960px){
-      .exp-layout { grid-template-columns: 1fr; gap: 2rem; }
+      .exp-layout { grid-template-columns: 1fr; gap: 3rem; }
       .exp-sticky { position: static; }
       .exp-stats { flex-direction: row; }
       .exp-stat-box { flex: 1; }
