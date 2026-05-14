@@ -1,7 +1,7 @@
 const projects = [
       {
         id:'p1',title:'SeaPedia',subtitle:'UI/UX Design · Mobile App',
-        desc:'Proyek desain UI/UX bertema edukasi maritim yang berfokus pada ubur-ubur kristal (Crystal Jellyfish). Tujuan utama proyek ini adalah menguji penerapan interaksi parallax pada perangkat mobile untuk meningkatkan keterlibatan pengguna (user engagement). Menggunakan skema warna monokromatik biru tua untuk menjaga fokus pada visual konten yang kontras dan tajam.',
+        desc:'A maritime education UI/UX design project focused on the Crystal Jellyfish. The main goal of this project was to test the implementation of parallax interactions on mobile devices to increase user engagement. A dark blue monochromatic color scheme was used to keep the focus on sharp, high-contrast content visuals.',
         cat:'uiux',tags:['Figma','Prototyping','User Research','Design System'],
         tools:'Figma',year:'2024',role:'UI/UX Designer',demo:'https://www.figma.com/design/6Oft40U2YNqF7cjk24tNl3/Abi_Wahyuna_Project?node-id=413-2&t=ofRZOr8kpuEVpR81-1',
         images:[
@@ -15,7 +15,7 @@ const projects = [
 
       {
         id:'p2',title:'MagicType',subtitle:'Game Dev · Unity',
-        desc:'MagicType adalah game berbasis wave-survival yang menantang kecepatan dan akurasi mengetik pemain. Dibangun menggunakan Unity dan C#, game ini mengubah mekanisme serangan tradisional menjadi sistem spell-casting melalui keyboard. Proyek ini mendemonstrasikan integrasi sistem input string real-time ke dalam logika pertempuran RPG.',
+        desc:'MagicType is a wave-survival game that challenges the player\'s typing speed and accuracy. Built with Unity and C#, the game transforms traditional attack mechanics into a spell-casting system via keyboard input. This project demonstrates the integration of a real-time string input system into RPG combat logic.',
         cat:'game',tags:['Unity','C#'],
         tools:'Unity 2022, C#',year:'2025',role:'Game Developer / Artist',demo:'https://abiwahyuna.itch.io/magictype',
         images:[
@@ -27,7 +27,7 @@ const projects = [
 
       {
         id:'p3',title:'Wanderly',subtitle:'UI/UX Design · Website',
-        desc:'Proyek UI/UX ini mengusung tema eksplorasi global dengan estetika yang modern dan cerah. Penggunaan high-quality imagery dikombinasikan dengan tipografi yang tegas bertujuan untuk membangun kepercayaan dan rasa antusias bagi para traveler. Elemen-elemen seperti kartu destinasi yang interaktif, galeri perjalanan, dan bagian testimoni disusun secara strategis untuk mengoptimalkan konversi dan kenyamanan navigasi pengguna.',
+        desc:'This UI/UX project embraces a global exploration theme with a modern and vibrant aesthetic. The use of high-quality imagery combined with bold typography aims to build trust and excitement for travelers. Elements such as interactive destination cards, a travel gallery, and a testimonials section are strategically arranged to optimize conversion and user navigation comfort.',
         cat:'uiux',tags:['Figma','User Research','Design System'],
         tools:'Figma',year:'2024',role:'UI/UX Designer',demo:'https://www.figma.com/design/6Oft40U2YNqF7cjk24tNl3/Abi_Wahyuna_Project?node-id=413-2&t=ofRZOr8kpuEVpR81-1',
         images:[
@@ -40,7 +40,7 @@ const projects = [
 
       {
         id:'p4',title:'TripLoka',subtitle:'UI/UX Design · Website',
-        desc:'Proyek UI/UX ini adalah platform tour guide khusus Bali yang bertujuan menghubungkan pelancong dengan pemandu lokal asli Bali yang mengenal setiap sudut pulau secara mendalam. Berbeda dengan agen tur massal, desain ini berfokus pada pengalaman yang lebih personal dan bermakna—mulai dari mendaki gunung hingga menjelajahi tradisi lokal. Antarmukanya dirancang untuk mencerminkan keindahan alam Bali, memastikan setiap petualangan terasa lebih aman, nyaman, dan penuh cerita budaya.',
+        desc:'This UI/UX project is a Bali-exclusive tour guide platform that aims to connect travelers with authentic local Balinese guides who know every corner of the island deeply. Unlike mass tour agencies, this design focuses on a more personal and meaningful experience — from mountain hikes to exploring local traditions. The interface is crafted to reflect the natural beauty of Bali, ensuring every adventure feels safer, more comfortable, and rich with cultural stories.',
         cat:'uiux',tags:['Figma','Prototyping','User Research','Design System'],
         tools:'Figma',year:'2024',role:'UI/UX Designer',demo:'https://www.figma.com/design/6Oft40U2YNqF7cjk24tNl3/Abi_Wahyuna_Project?node-id=413-2&t=ofRZOr8kpuEVpR81-1',
         images:[
@@ -56,7 +56,7 @@ const projects = [
 
       {
         id:'p5',title:'SmartPark',subtitle:'Website · Laravel',
-        desc:'QuickPark adalah solusi SaaS (Software as a Service) yang dirancang untuk mendigitalisasi pengelolaan parkir dari skala kecil hingga besar. Sistem ini membagi alur kerja ke dalam tiga peran strategis: Admin untuk manajemen area, Petugas untuk pencatatan transaksi real-time dan struk, serta Owner untuk pemantauan pendapatan dan statistik data. Proyek ini berfokus pada efisiensi pencatatan kendaraan dan transparansi data keuangan untuk mencegah kebocoran pendapatan di lapangan.',
+        desc:'QuickPark is a SaaS (Software as a Service) solution designed to digitalize parking management from small to large scale. The system divides the workflow into three strategic roles: Admin for area management, Officer for real-time transaction recording and receipts, and Owner for revenue monitoring and data statistics. This project focuses on efficient vehicle recording and financial data transparency to prevent revenue leakage in the field.',
         cat:'web',tags:['Laravel','PHP','PHPMyAdmin','CSS'],
         tools:'Laravel, PHP, PHPMyAdmin, CSS',year:'2026',role:'Backend Developer',demo:'#',
         images:[
@@ -69,7 +69,7 @@ const projects = [
 
       {
         id:'p6',title:'ArtTech',subtitle:'UI/UX Design · Website',
-        desc:'ArtTech adalah solusi UI/UX untuk kebutuhan pameran seni digital yang menggabungkan teknologi dan estetika. Platform ini menyediakan ruang bagi seniman untuk memamerkan karya mereka dengan tampilan yang eksklusif dan profesional. Berfokus pada kemudahan navigasi dan penyajian visual yang tajam, ArtTech mendefinisikan ulang cara kita menikmati seni di era digital.',
+        desc:'ArtTech is a UI/UX solution for digital art exhibition needs that merges technology and aesthetics. The platform provides a space for artists to showcase their work with an exclusive and professional presentation. Focused on ease of navigation and sharp visual display, ArtTech redefines how we experience art in the digital era.',
         cat:'uiux',tags:['Figma','Prototyping','Design System'],
         tools:'Figma',year:'2024',role:'UI/UX Designer',demo:'https://www.figma.com/design/6Oft40U2YNqF7cjk24tNl3/Abi_Wahyuna_Project?node-id=413-2&t=ofRZOr8kpuEVpR81-1',
         images:[
@@ -82,7 +82,7 @@ const projects = [
 
       {
         id:'p7',title:'Dunia Nara',subtitle:'Game Dev · Unity',
-        desc:'Di tengah hiruk pikuk kehidupan, Dunia Nara hadir sebagai tempat pemberhentian sejenak. Dalam game platformer 2D ini, pemain akan menavigasi dunia yang indah sambil memecahkan teka-teki yang merefleksikan perjalanan mencari jati diri. Sebuah perpaduan seni ilustrasi dan pemrograman Unity yang bertujuan menyentuh hati pemain melalui setiap langkah kecil Nara.',
+        desc:'Amidst the hustle and bustle of life, Dunia Nara offers a moment to pause. In this 2D platformer, players navigate a beautiful world while solving puzzles that reflect a journey of self-discovery. A blend of illustration art and Unity programming that aims to touch the player\'s heart through every small step Nara takes.',
         cat:'game',tags:['Unity','C#'],
         tools:'Unity 2022, C#',year:'2025',role:'Game Developer',demo:'',
         images:[
@@ -95,7 +95,7 @@ const projects = [
       
       {
         id:'p8',title:'ZipPoint Star',subtitle:'Game Dev · Unity',
-        desc:'ZipPoint Star adalah game mobile kasual yang menguji ketelitian dan imajinasi pemain. Mekanik utamanya mengharuskan pemain menghubungkan titik-titik sesuai urutan angka untuk membentuk siluet misterius. Setelah bentuk terungkap, tantangan berikutnya adalah menebak objek tersebut menggunakan sistem susun kata yang tersedia. Proyek ini menggabungkan kepuasan visual saat menggambar garis dengan stimulasi kognitif melalui teka-teki kata.',
+        desc:'ZipPoint Star is a casual mobile game that tests the player\'s precision and imagination. The core mechanic requires players to connect numbered dots in order to reveal a mysterious silhouette. Once the shape is uncovered, the next challenge is to guess the object using an available word-arrangement system. This project combines the visual satisfaction of drawing lines with cognitive stimulation through word puzzles.',
         cat:'game',tags:['Unity','C#'],
         tools:'Unity 2022, C#',year:'2025',role:'Game Developer',demo:'#',
         images:[
