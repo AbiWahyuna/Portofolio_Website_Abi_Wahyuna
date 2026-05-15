@@ -579,7 +579,7 @@
     .exp-layout {
       display: grid;
       grid-template-columns: 320px 1fr;
-      gap: 4rem;
+      gap: 10rem;
       align-items: start;
     }
 
@@ -852,7 +852,7 @@
     .hero-inner { animation: fadeUp .7s ease both; }
 
     /* RESPONSIVE */
-    @media(max-width:960px){
+    @media(max-width:1200px){
       .exp-layout { grid-template-columns: 1fr; gap: 2rem; }
       .exp-sticky { position: static; }
       .exp-stats { flex-direction: column; }
