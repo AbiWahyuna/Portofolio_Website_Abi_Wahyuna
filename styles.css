@@ -579,7 +579,7 @@
     .exp-layout {
       display: grid;
       grid-template-columns: 320px 1fr;
-      gap: 10rem;
+      gap: 4rem;
       align-items: start;
     }
 
@@ -853,10 +853,11 @@
 
     /* RESPONSIVE */
     @media(max-width:960px){
-      .exp-layout { grid-template-columns: 1fr; gap: 3rem; }
+      .exp-layout { grid-template-columns: 1fr; gap: 2rem; }
       .exp-sticky { position: static; }
-      .exp-stats { flex-direction: row; }
+      .exp-stats { flex-direction: column; }
       .exp-stat-box { flex: 1; }
+      .exp-cards { margin-top: 0; }
     }
     @media(max-width:900px){
       .about-grid { grid-template-columns: 1fr; }
@@ -870,8 +871,11 @@
       .nav-links { display: none; }
       .hero-stats { gap: 2rem; }
       .exp-stats { flex-direction: column; }
+      
+      .section { padding: 3.5rem 5%; }
+      #experience { padding-top: 3rem; }
+      #skills { padding-bottom: 3rem; }
     }
-
     ::-webkit-scrollbar { width: 5px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--bg4); border-radius: 3px; }
