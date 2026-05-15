@@ -579,7 +579,7 @@
     .exp-layout {
       display: grid;
       grid-template-columns: 320px 1fr;
-      gap: 4rem;
+      gap: 10rem;
       align-items: start;
     }
 
@@ -867,15 +867,10 @@
       .whatido-top p { text-align: left; }
     }
     @media(max-width:768px){
-  .nav-links { display: none; }
-  .hero-stats { gap: 2rem; }
-  .exp-stats { flex-direction: column; }
-  
-  /* Tambahan baru */
-  .section { padding: 3.5rem 5%; }
-  #experience { padding-top: 3rem; }
-  #skills { padding-bottom: 3rem; }
-}
+      .nav-links { display: none; }
+      .hero-stats { gap: 2rem; }
+      .exp-stats { flex-direction: column; }
+    }
 
     ::-webkit-scrollbar { width: 5px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
