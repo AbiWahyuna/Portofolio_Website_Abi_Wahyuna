@@ -853,70 +853,71 @@
 
     /* ═══ EXPERIENCE RESPONSIVE FIX ═══ */
     @media (max-width: 960px) {
-    .exp-layout {
-      grid-template-columns: 1fr;
-      gap: 2.5rem;
+      .exp-layout {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .exp-sticky {
+        position: static;
+        text-align: center;
+      }
+
+      .exp-sticky h2 {
+        font-size: 2rem;
+      }
+
+      .exp-sticky p {
+        max-width: 480px;
+        margin: 0 auto;
+      }
+
+      .exp-stats {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        max-width: 380px;
+        margin: 1.5rem auto 0;   /* tengahin group */
+      }
+
+      .exp-stat-box {
+        flex: 1;
+        flex-direction: row;     /* angka | label sejajar */
+        align-items: center;
+        text-align: left;
+        gap: 1rem;
+      }
+
+      .exp-cards {
+        width: 100%;
+      }
+
+      .exp-card {
+        padding: 1.5rem;
+      }
     }
 
-    .exp-sticky {
-      position: static;
-      text-align: center;
-    }
+    @media (max-width: 600px) {
+      .exp-stats {
+        flex-direction: row;        /* ← KANAN KIRI */
+        justify-content: center;
+        align-items: stretch;       /* ← SAMA TINGGI */
+        gap: 1rem;
+        margin: 1.5rem auto 0;
+      }
 
-    .exp-sticky h2 {
-      font-size: 2rem;
-    }
+      .exp-stat-box {
+        flex: 1;                    /* ← SAMA LEBAR */
+        max-width: 160px;
+        flex-direction: column;     /* ← ANGKA DI ATAS, LABEL DI BAWAH */
+        align-items: flex-start;
+        text-align: left;
+      }
 
-    .exp-sticky p {
-      max-width: 480px;
-      margin: 0 auto;
+      .exp-stat-n {
+        font-size: 1.6rem;
+      }
     }
-
-    .exp-stats {
-      flex-direction: row;
-      justify-content: center;
-      gap: 1rem;
-      max-width: 380px;
-      margin: 1.5rem auto 0;   /* tengahin group */
-    }
-
-    .exp-stat-box {
-      flex: 1;
-      flex-direction: row;     /* angka | label sejajar */
-      align-items: center;
-      text-align: left;
-      gap: 1rem;
-    }
-
-    .exp-cards {
-      width: 100%;
-    }
-
-    .exp-card {
-      padding: 1.5rem;
-    }
-  }
-
-  @media (max-width: 600px) {
-    .exp-stats {
-      flex-direction: row;
-      gap: 0.8rem;
-      max-width: 100%;
-      padding: 0 1rem;
-    }
-
-    .exp-stat-box {
-      flex: 1;
-      padding: 0.9rem 1rem;
-      flex-direction: row;
-      align-items: center;
-      gap: 0.8rem;
-    }
-
-    .exp-stat-n {
-      font-size: 1.6rem;
-    }
-  }
     @media(max-width:900px){
       .about-grid { grid-template-columns: 1fr; }
       .about-photo { max-width: 320px; }
