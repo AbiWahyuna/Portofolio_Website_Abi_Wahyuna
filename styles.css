@@ -489,10 +489,11 @@
     }
 
     .services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1px;
-}
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1px;
+      width: 100%;
+    }
 
 
 
@@ -867,15 +868,19 @@
       .modal-meta { grid-template-columns: 1fr 1fr; }
       .whatido-top p { text-align: left; }
     }
-    @media(max-width:768px){
-      .nav-links { display: none; }
-      .hero-stats { gap: 2rem; }
-      .exp-stats { flex-direction: column; }
-      
-      .section { padding: 3.5rem 5%; }
-      #experience { padding-top: 3rem; }
-      #skills { padding-bottom: 3rem; }
-    }
+   @media(max-width:768px){
+  .nav-links { display: none; }
+  .hero-stats { gap: 2rem; }
+  .exp-stats { flex-direction: column; }
+  .section { padding: 3.5rem 5%; }
+  #experience { padding-top: 3rem; }
+  #skills { padding-bottom: 3rem; }
+
+  /* Tambahan baru */
+  .services-grid { grid-template-columns: 1fr; }
+  .svc-card { padding: 2rem 1.5rem; }
+  #whatido { padding-left: 1.2rem; padding-right: 1.2rem; }
+}
     ::-webkit-scrollbar { width: 5px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--bg4); border-radius: 3px; }
